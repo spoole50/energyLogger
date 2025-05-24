@@ -4,7 +4,7 @@ import logging
 from typing import Union
 from bleak import BleakClient, BleakError
 from bleak.exc import BleakDeviceNotFoundError
-from bluetti_mqtt.core import DeviceCommand
+from ..commands import DeviceCommand
 from .exc import BadConnectionError, ModbusError, ParseError
 from .encryption import Connection, PassthroughConnection, EncryptedConnection
 
